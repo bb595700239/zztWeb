@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>中政投--我的账户</title>
+    <meta name="keywords" content="中政投" />
+    <meta name="description" content="中政投介绍" />
+    <link type="text/css" rel="stylesheet" href="../css/base.css">
+    <link type="text/css" rel="stylesheet" href="../css/index.min.css">
+    <script type="text/javascript" src="../js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="../js/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="../js/goalProgress.js"></script>
+    <script type="text/javascript" src="../js/excanvas.js"></script>
+    <script type="text/javascript" src="../js/jquery.easy-pie-chart.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="../js/datepicker/jquery-ui.min.css">
+    <script type="text/javascript" src="../js/datepicker/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="../js/global.js"></script>
+    <!--[if lt IE 8]>
+        <script src="../js/browser-not-supported.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- 头部开始 -->
+    <header data-temp="header-template.html"></header>
+    <!-- 头部结束 -->
+    <div class="container">
+        <div class="item-box border-top margin-t-20">
+            <div class="about-tab-box clearfix">
+                <div class="hd">
+                    <ul>
+                        <li>帐户总览</li>
+                        <li>我的投资</li>
+                        <li>资金明细</li>
+                        <li>帐户管理</li>
+                    </ul>
+                </div>
+                <ul class="bd">
+                    <!-- 帐户总览 -->
+                    <li class="none">
+                        <div class="userinfo clearfix">
+                            <div class="user clearfix">
+                                <img class="photo" src="../images/photo.png" alt="头像" width="68" height="68">
+                                <div class="userbox">
+                                    <div class="welcome">你好，<span class="name">张君雅</span></div>
+                                    <div class="con clearifx">
+                                        <div class="usericon-box fl-left clearfix"><i class="usericon usericon-1 active"></i><i class="usericon usericon-2"></i><i class="usericon usericon-3"></i><i class="usericon usericon-4"></i></div>
+                                        <div class="safe fl-left">账户安全性：<span class="level1">低</span> <a class="up" href="#">提升</a></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info clearfix">
+                                <div class="infobox fl-left">
+                                    <div class="asset">总资产：100000</div>
+                                    <div class="commend">总资产 = 在投资金 + 可用余额 + 待收收益 + 提现冻结</div>
+                                    <ul class="list clearfix"><li>在投金额：100000</li><li>已收收益：10000</li><li>提现冻结：10000</li><li>待收收益：100000</li></ul>
+                                </div>
+                                <div class="btns-box fl-right clearfix">
+                                    <div class="useful">可用金额(元)：<div class="num">100000</div></div>
+                                    <a href="#" class="btns btns-info">充值</a><a href="#" class="btns">提现</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 我的投资－项目收益 -->
+                    <!-- <li class="none">
+                        <div class="tit-left breadcrumb">我的投资 > <span class="active">五水债10号</span></div>
+                        <table class="g-table table2">
+                            <thead><tr><td>序号</td><td>起息时间</td><td>偿付时间</td><td>计息天数</td><td>应收金额(元)</td><td>投资金额(元)</td><td>投资收益(元)</td><td>平台补贴(元)</td><td>偿付状态</td></tr></thead>
+                            <tbody>
+                                <tr><td>1</td><td>2016-01-20</td><td>2016-05-20</td><td>100</td><td>3822.07</td><td>0</td><td>3822.07</td><td>309.38</td><td>已偿付</td></tr>
+                                <tr><td>1</td><td>2016-01-20</td><td>2016-05-20</td><td>100</td><td>3822.07</td><td>0</td><td>3822.07</td><td>309.38</td><td>已偿付</td></tr>
+                                <tr><td>1</td><td>2016-01-20</td><td>2016-05-20</td><td>100</td><td>3822.07</td><td>0</td><td>3822.07</td><td>309.38</td><td>已偿付</td></tr>
+                                <tr><td>1</td><td>2016-01-20</td><td>2016-05-20</td><td>100</td><td>3822.07</td><td>0</td><td>3822.07</td><td>309.38</td><td>已偿付</td></tr>
+                                <tr><td>1</td><td>2016-01-20</td><td>2016-05-20</td><td>100</td><td>3822.07</td><td>0</td><td>3822.07</td><td>309.38</td><td>已偿付</td></tr>
+                            </tbody>
+                        </table>
+                    </li> -->
+                    <!-- 我的投资－投资列表 -->
+                    <li class="none">
+                        <div class="invest-list">
+                            <div class="tit-left breadcrumb">我的投资 <ul class="hd-sub fl-right"><li>全部</li><li>融资中</li><li>还款中</li><li>已结清</li></ul></div>
+                            <ul class="bd-sub">
+                                <li>
+                                    <table class="g-table table2">
+                                        <thead><tr><td>项目名称</td><td>投资金额</td><td>预期年化收益率</td><td>预期总收益</td><td>投资时间</td><td>项目进度</td></tr></thead>
+                                        <tbody>
+                                            <tr><td>五水债项目1号</td><td>230000</td><td>7%</td><td>-</td><td>2016-06-06</td><td>融资中</td></tr>
+                                            <tr><td>五水债项目1号</td><td>230000</td><td>7%</td><td>-</td><td>2016-06-06</td><td>融资中</td></tr>
+                                            <tr><td>五水债项目1号</td><td>230000</td><td>7%</td><td>16000</td><td>2016-06-06</td><td><a class="blue">还款中</a></td></tr>
+                                            <tr><td>五水债项目1号</td><td>230000</td><td>7%</td><td>16000</td><td>2016-06-06</td><td><a class="blue">还款中</a></td></tr>
+                                            <tr><td>五水债项目1号</td><td>230000</td><td>7%</td><td>16000</td><td>2016-06-06</td><td><a class="blue">还款中</a></td></tr>
+                                            <tr><td>五水债项目1号</td><td>230000</td><td>7%</td><td>16000</td><td>2016-06-06</td><td><a class="blue">还款中</a></td></tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="pagination margin-t-20">
+                                        <div class="con clearfix">
+                                            <span class="prev hide fl-left">上一页</span>
+                                            <span class="page-num on fl-left">1</span><span class="page-num fl-left">2</span><span class="page-num fl-left">3</span>
+                                            <span class="next fl-left">下一页</span>
+                                            <span class="total-info fl-left">共<span>3</span>页/<span>36</span>条记录</span>
+                                            <span class="fl-left"><span class="fl-left">跳转到</span><input type="text" class="fl-left" id="jump-index" title="请输入正整数" size="1"><a class="jump-page fl-left" href="#">GO</a></span>
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li><div class="nonedata">您还没有投资，暂无数据！</div></li>
+                                <li><div class="nonedata">您还没有投资，暂无数据！</div></li>
+                                <li><div class="nonedata">您还没有投资，暂无数据！</div></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- 资金明细 -->
+                    <li class="none">
+                        <div class="tit-left">资金明细 <div class="fl-right font-size-18">可用余额：<span class="zzt-red">10000</span>元</div></div>
+                        <div class="format-list clearfix">
+                            <div class="format">
+                                <span class="label">时间：</span><div class="date-input"><input type="text" value="2016-06-26" id="starttime"><i></i></div>
+                                <span class="hold">-</span><div class="date-input"><input type="text" value="2016-06-26" id="endtime"><i></i></div>
+                            </div>
+                            <script type="text/javascript">
+                                $(function() { 
+                                    $('#starttime').datepicker({
+                                        showOtherMonths: true,
+                                        selectOtherMonths: true,
+                                        dateFormat: 'yy-mm-dd',
+                                        onSelect:function(dateText,inst){
+                                           $("#endtime").datepicker("option","minDate",dateText);
+                                        }
+
+                                    });
+                                    $('#endtime').datepicker({
+                                        showOtherMonths: true,
+                                        selectOtherMonths: true,
+                                        dateFormat: 'yy-mm-dd',
+                                        onSelect:function(dateText,inst){
+                                            $("#starttime").datepicker("option","maxDate",dateText);
+                                        }
+
+                                    });
+                                }); 
+                            </script>
+                            <div class="format"><span class="label">最近：</span><span class="option active">1个月</span><span class="option">3个月</span><span class="option">1年</span></div>
+                            <div class="format"><span class="label">类型：</span><span class="option active">全部</span><span class="option">投资</span><span class="option">充值</span><span class="option">提现</span><span class="option">收益</span></div>
+                        </div>
+                        <table class="g-table table2">
+                            <thead><tr><td>交易时间</td><td>名称</td><td>金额</td><td>交易类型</td><td>交易流水号</td><td>交易状态</td></tr></thead>
+                            <tbody>
+                                <tr><td>2016-04-21<div class="gray">17:55</div></td><td>五水债10号</td><td>100000</td><td>投资</td><td>2016042115553212</td><td>成功</td></tr>
+                                <tr><td>2016-04-21<div class="gray">17:55</div></td><td>五水债10号</td><td>100000</td><td>投资</td><td>2016042115553212</td><td>成功</td></tr>
+                                <tr><td>2016-04-21<div class="gray">17:55</div></td><td>五水债10号</td><td>100000</td><td>投资</td><td>2016042115553212</td><td class="blue">成功</td></tr>
+                                <tr><td>2016-04-21<div class="gray">17:55</div></td><td>五水债10号</td><td>100000</td><td>投资</td><td>2016042115553212</td><td class="blue">成功</td></tr>
+                                <tr><td>2016-04-21<div class="gray">17:55</div></td><td>五水债10号</td><td>100000</td><td>投资</td><td>2016042115553212</td><td class="blue">成功</td></tr>
+                                <tr><td>2016-04-21<div class="gray">17:55</div></td><td>五水债10号</td><td>100000</td><td>投资</td><td>2016042115553212</td><td class="blue">成功</td></tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <!-- 帐户管理 -->
+                    <li class="none">
+                        <div class="tit-left">帐户管理</div>
+                        <table class="g-table unborder table2 account-set">
+                            <tbody>
+                                <tr><td class="t1">真实姓名</td><td class="t2">单俊峰 | 220524********1011</td><td class="t3 zzt-red">已认证</td></tr>
+                                <tr><td class="t1">银行卡</td><td class="t2">工商银行|6226*********6563</td><td class="t3"><a class="blue">去绑定</a></td></tr>
+                                <tr><td class="t1">手机号</td><td class="t2">186****4443</td><td class="t3"><a class="blue">修改</a></td></tr>
+                                <tr><td class="t1">风险评测</td><td class="t2">低风险承受能力类E</td><td class="t3"><a class="blue">去评测</a></td></tr>
+                                <tr><td class="t1">登录密码</td><td class="t2">登录账户时需要输入的密码</td><td class="t3"><a class="blue">重置</a></td></tr>
+                                <tr><td class="t1">交易密码</td><td class="t2">资金变动时需要输入的密码</td><td class="t3"><a class="blue">设置</a></td></tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+            </div>
+            <script type="text/javascript">
+            $('.account-set tr:nth-child(odd)').addClass('odd');
+            $(".invest-list").slide({prevCell:null,nextCell:null,titCell:'.hd-sub li',mainCell:'.bd-sub',trigger:"click"});
+            $(".about-tab-box").slide({prevCell:null,nextCell:null,trigger:"click"});
+            </script>
+        </div>
+    </div>
+    <footer data-temp="footer-template.html"></footer>
+    
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+var host=window.location.host,url="http://localhost/JZ-APIServer/",baofoourl="https://qisheng.online/",downloadurl="http://s1.zhongzhengtou.com/";

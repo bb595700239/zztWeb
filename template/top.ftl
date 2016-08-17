@@ -1,0 +1,43 @@
+
+		<div class="top-nav">
+    		<div class="container clearfix">
+                <div class="fl-left">
+                    <span id="islogin" class="loadlogin none">
+	                    <a href="/html/account/account.html" id="Tphone">180*******2</a>,
+	                    <a class="a1" onclick="path.loginOuts()">退出</a>
+                    </span> 
+                    <span id="nologin" class="loadlogin none">
+	                	你好，请<a class="a1" href="/html/login.html">登录</a>
+	                	<a class="a2" href="/html/regist.html">免费注册</a>
+		            </span>
+                </div> 
+                
+
+                <div class="fl-right">
+                    <span class="hotline">客服热线：0571-28315355</span>
+                    <!-- <ul class="toplink">
+                        <li class="i-icon i-weixin"></li>
+                        <li class="i-icon i-qq"></li>
+                    </ul> -->
+                </div>		
+    		</div>
+    	</div>
+
+        <div class="main-nav">
+            <div class="container clearfix">
+                <a class="fl-left logo" href="/"><img src="/images/icon_logo.png" width="140" height="50" alt="中政投"></a> 
+                <div class="fl-left sub-tit">中国地方政府债投融资服务平台</div>
+                <ul class="index-nav fl-right">
+                    <li id="index" data-active="index"><a href="/">首页</a></li>
+                    <li id="manageMoney" data-active="manageMoney"><a href="/html/list/manageMoney.html">我要理财</a></li>
+                    <li  data-active="myspecial"><a href="/html/mySpecial/mySpecial.html" onclick="path.gotomyspecial();return false;">我的专享</a></li>
+                    <li  data-active="safety"><a href="/html/safety/safety.html">安全保障</a></li>
+                    <li  data-active="about"><a href="/html/about/about.html">关于我们</a></li>
+                    <li class="last"  data-active="account"><a href="/html/account/account.html" onclick="path.gotoaccount();return false;">我的账户</a></li>
+                </ul>    
+            </div>
+        </div>
+
+
+
+    

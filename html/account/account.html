@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+    <title>中政投--我的账户</title>
+    <meta name="keywords" content="中政投" />
+    <meta name="description" content="中政投介绍" />
+    <link type="text/css" rel="stylesheet" href="/css/base.css">
+    <link type="text/css" rel="stylesheet" href="/css/index.min.css">
+    <link type="text/css" rel="stylesheet" href="/css/animate.css">
+    <script type="text/javascript" src="/js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="/js/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="/js/jquery.cookie.min.js"></script>
+	<script type="text/javascript" src="/js/path.js"></script>
+    <script type="text/javascript" src="/js/global.js"></script>
+    <script type="text/javascript" src="/js/top.js"></script>
+
+	<script type="text/javascript" src="/js/bootstrap-table.js"></script>
+    <script type="text/javascript" src="/js/jquery.tmpl.js"></script>
+    <link type="text/css" rel="stylesheet" href="/js/datepicker/jquery-ui.min.css">
+    <script type="text/javascript" src="/js/datepicker/jquery-ui.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="/js/dialog/dialog.css">
+    <script type="text/javascript" src="/js/dialog/dialog.js"></script>
+	<link type="text/css" rel="stylesheet" href="/js/popover/jquery.webui-popover.min.css">
+    <script type="text/javascript" src="/js/popover/jquery.webui-popover.min.js"></script>
+	<script type="text/javascript">
+		var jump_link="/html/login.html"
+	</script>
+	<!--[if lt IE 7]>
+	    <script src="/js/browser-not-supported.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+    <!-- 头部开始 -->
+    <div id="header" class="headerTmp" data-temp="/html/header-template.html" data-active="account"></div>
+    <!-- 头部结束 -->
+    <div class="container">
+        <div class="item-box border-top margin-t-20">
+            <div class="about-tab-box clearfix">
+                <div class="hd">
+                    <ul>
+                        <li data-hash-active="pandect">账户总览</li>
+                        <li data-hash-active="invest">我的投资</li>
+                        <li data-hash-active="detail">资金明细</li>
+                        <li data-hash-active="manage">账户管理</li>
+                    </ul>
+                </div>
+                <ul class="bd">
+                    <!-- 账户总览 -->
+                    <li id="view" class="none">
+                        <div style="display:none" id="notice">
+						   请先<a href="/html/login.html">登录</a>
+						</div>
+                    </li>
+                    <!-- 我的投资－项目收益 -->
+                    <!-- <li>
+                        <div class="tit-left breadcrumb">我的投资 > <span class="active">五水债10号</span></div>
+                        <table class="g-table table2">
+                            <thead><tr><td>序号</td><td>起息时间</td><td>偿付时间</td><td>计息天数</td><td>应收金额(元)</td><td>投资金额(元)</td><td>投资收益(元)</td><td>平台补贴(元)</td><td>偿付状态</td></tr></thead>
+                            <tbody>
+                                <tr><td>1</td><td>2016-01-20</td><td>2016-05-20</td><td>100</td><td>3822.07</td><td>0</td><td>3822.07</td><td>309.38</td><td>已偿付</td></tr>
+                                <tr><td>1</td><td>2016-01-20</td><td>2016-05-20</td><td>100</td><td>3822.07</td><td>0</td><td>3822.07</td><td>309.38</td><td>已偿付</td></tr>
+                                <tr><td>1</td><td>2016-01-20</td><td>2016-05-20</td><td>100</td><td>3822.07</td><td>0</td><td>3822.07</td><td>309.38</td><td>已偿付</td></tr>
+                                <tr><td>1</td><td>2016-01-20</td><td>2016-05-20</td><td>100</td><td>3822.07</td><td>0</td><td>3822.07</td><td>309.38</td><td>已偿付</td></tr>
+                                <tr><td>1</td><td>2016-01-20</td><td>2016-05-20</td><td>100</td><td>3822.07</td><td>0</td><td>3822.07</td><td>309.38</td><td>已偿付</td></tr>
+                            </tbody>
+                        </table>
+                    </li> -->
+					   <!-- 我的投资－投资列表 -->
+                      <li class="none">
+                        <div class="invest-list">
+                            <form id="form1">
+                                <div class="tit-left breadcrumb">我的投资 <ul class="hd-sub fl-right"><li data-status="-1">全部</li><li data-status="1">融资中</li><li data-status="2">还款中</li><li data-status="3">已结清</li></ul></div>
+                                <input type="hidden" name="status" id="status" value="-1">
+                            </form>
+                            <ul class="bd-sub">
+                                <li>							
+									<!-- <table data-forform="form1" class="g-table table2" data-toggle="table" 		
+                                    data-toolbar="#toolbar" data-query-params="queryParams"
+                                    data-url="http://qisheng.online/myAccount/myInvestment.action" 
+                                    data-side-pagination="server" data-pagination="true" data-page-size="5" data-show-refresh="false" data-show-footer="false" data-show-toggle="false" data-cache="false" id='investTable'> -->
+                                    <table data-forform="form1" class="g-table table2" data-toggle="table" 		
+                                    data-toolbar="#toolbar" data-query-params="queryParams"
+                                    data-url="" 
+                                    data-side-pagination="server" data-pagination="true" data-page-size="8" data-show-refresh="false" data-show-footer="false" data-show-toggle="false" data-cache="false" id='investTable'>
+                                        <thead>
+                                            <tr>
+                                                <th data-field="subjectName" data-formatter="format.nameFormatter">项目名称</th>
+												<th data-field="investmentActualInvestment" data-formatter="format.outputmoney">投资金额</th>
+												<th data-field="perReturn">预期年化收益率</th>
+												<th data-field="investmentExpectedIncome" data-formatter="format.outputmoney">预期总收益</th>
+												<th data-field="investmentTime" data-formatter="format.dateFormatter" class="text-muted">投资时间</th>
+												<th data-field="rate" data-formatter="format.rateFormatter">项目进度</th>
+												
+                                            </tr>
+                                        </thead>
+                                    </table>                         
+                                </li>                       
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- 资金明细 -->
+                    <li class="none">
+                        <div class="tit-left" data-customtitle>资金明细 <div class="tit-right">可用余额：<span class="zzt-red" id='money'></span>元</div></div>
+                        <form id="form2">
+							<input type="hidden" name="type" id="type" value="-1">
+							<input type="hidden" name="monthNum" id="monthnum" value="-1">
+							<div class="format-list clearfix">
+								 <div class="format">
+									<span class="label">时间：</span><div class="date-input"><input type="text" value="2016-06-26" id="starttime" name="start"><i></i></div>
+									<span class="hold">-</span><div class="date-input"><input type="text" value="2016-06-26" id="endtime" name="end"><i></i></div>
+								</div>
+								<script type="text/javascript">
+									$(function() { 
+										$('#starttime').datepicker({
+											showOtherMonths: true,
+											selectOtherMonths: true,
+											dateFormat: 'yy-mm-dd',
+											onSelect:function(dateText,inst){
+											   $("#endtime").datepicker("option","minDate",dateText);
+											   $('#detailTable').bootstrapTable('refresh', {silent: true});
+											}
+
+										});
+										$('#endtime').datepicker({
+											showOtherMonths: true,
+											selectOtherMonths: true,
+											dateFormat: 'yy-mm-dd',
+											onSelect:function(dateText,inst){
+												$("#starttime").datepicker("option","maxDate",dateText);
+												$('#detailTable').bootstrapTable('refresh', {silent: true});
+											}
+
+										});
+										$( "#starttime" ).datepicker( 'setDate' , new Date());
+										$( "#endtime" ).datepicker( 'setDate' , +1);
+									}); 
+								</script>
+								<div class="format"><span class="label">最近：</span><span class="option active" data-monthnum='-1'>使用日期</span><span class="option" data-monthnum='1'>1个月</span><span class="option" data-monthnum='3'>3个月</span><span class="option" data-monthnum='12'>1年</span></div>
+								<div class="format"><span class="label">类型：</span><span class="option active" data-type="-1">全部</span><span class="option" data-type="2">投资</span><span class="option" data-type="1">充值</span><span class="option" data-type="8">提现</span><span class="option" data-type="6">收益</span></div>
+							</div>
+						</form>
+                        <!-- <table data-forform="form2" class="g-table table2"  data-toggle="table" 		
+						data-toolbar="#toolbar" data-query-params="queryParams"
+						data-url="http://qisheng.online/myAccount/moneyDetail.action" 
+						data-side-pagination="server" data-pagination="true" data-page-size="5" data-show-refresh="false" data-show-footer="false" data-show-toggle="false" data-cache="false" id='detailTable'> -->
+						<table data-forform="form2" class="g-table table2"  data-toggle="table" 		
+						data-toolbar="#toolbar" data-query-params="queryParams"
+						data-url="" 
+						data-side-pagination="server" data-pagination="true" data-page-size="8" data-show-refresh="false" data-show-footer="false" data-show-toggle="false" data-cache="false" id='detailTable'>                                      
+							<thead>
+								<tr>
+									<th data-field="accountFlowCreatetime" data-formatter="format.dateFormatter" class="text-muted">交易时间</th>
+									<th data-field="accountFlowMark" class="width310" data-formatter="format.accountFlowMark">描述</th>
+									<th data-field="accountFlowOperateMoney" data-formatter="format.outputmoney">金额</th>
+									<th data-field="strType">交易类型</th>
+									<th data-field="accountFlowId">交易流水号</th>
+									<th data-field="strState">交易状态</th>                                                                                                                                                        
+								</tr>
+							</thead>                               
+                        </table>
+                    </li>
+                    <!-- 账户管理 -->
+                    <li class="none">
+                    	<div class="form-alert" id="messages" style="display: none"></div>
+                        <div class="tit-left" >账户管理</div>
+                        <table class="g-table unborder table2 account-set">
+                            <tbody id="account">
+                               
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+            </div>
+			<!-- 账户管理模板 START-->
+			<script id="accountTemple" type="text/x-jquery-tmpl">
+				<tr><td class="t1">真实姓名</td><td class="t2">${userName} | ${userPersonCard}</td>
+				{{if isReal==0}}
+				<td class="t3"><a class="blue"  onclick="upsafe()">去认证</a></td></tr>
+				{{else}}
+				<td class="t3 zzt-red">已认证</td></tr>
+				{{/if}}
+				{{if isbank==0}}
+				<tr><td class="t1">银行卡</td><td class="t2">${bank} | ${cardNum}</td><td class="t3"><a class="blue"  onclick="upsafe()">去绑定</a></td></tr>
+				{{else}}
+				<tr><td class="t1">银行卡</td><td class="t2">${bank} | ${cardNum}</td><td class="t3 zzt-red" >已绑定</td></tr>
+				{{/if}}
+				<tr><td class="t1">风险评测</td><td class="t2">${type}</td><td class="t3">
+				{{if riskMark>-1&&riskMark!=null}}
+				<span class="t3 zzt-red">已评测</span></td></tr>
+				{{else}}
+				<a class="blue" href="/html/research.html">去评测</a></td></tr>
+				{{/if}}
+				<tr><td class="t1">登录密码</td><td class="t2">登录账户时需要输入的密码</td><td class="t3"><a class="blue" href="/html/resetInPwd.html">重置</a></td></tr>
+				<tr><td class="t1">交易密码</td><td class="t2">资金变动时需要输入的密码</td>
+				{{if payPwd}}
+				<td class="t3"><a class="blue" href="/html/resetPayPwd.html">重置</a></td></tr>
+				{{else}}
+				<td class="t3"><a class="blue" onclick="upsafe()">设置</a></td></tr>
+				{{/if}}
+			</script>
+			<!-- 账户管理模板 END-->
+			
+			<!-- 账户总览模板 START-->
+			<script id="viewTemple" type="text/x-jquery-tmpl">
+				<div class="userinfo clearfix">
+				<div class="user clearfix">
+					<img class="photo" src="/images/photo.png" alt="头像" width="68" height="68">
+					<div class="userbox">
+						<div class="welcome">你好,<span class="name">${userName}</span></div>
+						<div class="con clearifx">
+							<div class="usericon-box fl-left clearfix">
+								<i class="usericon usericon-2 active" data-content="未绑定手机号 ，<a class='orange' href='/html/regist.html'>去绑定</a>"></i>
+								<i class="usericon usericon-1" data-content="未实名认证 ，<a class='orange' onclick='upsafe()'>去认证</a>"></i>
+								<i class="usericon usericon-3" data-content="未绑定银行卡 ，<a class='orange' onclick='upsafe()'>去绑定</a>"></i>
+								<i class="usericon usericon-4" data-content="未设置交易密码 ，<a class='orange' onclick='upsafe()'>去设置</a>"></i>
+							</div>
+							<div class="safe fl-left">账户安全性：<span class="level1" id="safe"></span> <a class="up" onclick="upsafe()">提升</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="info clearfix">
+					<div class="infobox fl-left">
+						<div class="asset">总资产：${$.outputmoney(allAssets)}</div>
+						<div class="commend">总资产 = 在投资金 + 可用余额 + 待收收益 + 提现冻结</div>
+						<ul class="list clearfix"><li>在投金额：${$.outputmoney(amounts)}</li><li>已收收益：${$.outputmoney(receive)}</li><li>提现冻结：${$.outputmoney(frozen)}</li><li>待收收益：${$.outputmoney(wait)}</li></ul>
+					</div>
+					<div class="btns-box fl-right clearfix">
+						<div class="useful">可用金额(元)：<div class="num">${$.outputmoney(available)}</div></div>
+						<a class="btns btns-info" onclick="path.gotochanrge()">充值</a><a onclick="path.gotowithdraw()" class="btns">提现</a>
+					</div>
+				</div>
+				</div>
+			</script>		
+			<!-- 账户总览模板 END-->
+            <script type="text/javascript" src="/js/account.js"></script>
+			
+        </div>
+    </div>
+    <div id="footer" data-temp="/html/footer-template.html"></div>
+    
+</body>
+
+</html>

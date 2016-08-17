@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+body{ background:#f6f6f6; color: #898989;overflow-x:hidden;}
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,fieldset,lengend,button,input,textarea,form,th,td{margin:0;padding:0;}
+body,button,input,select,textarea{font:16px/1.5 "Microsoft YaHei",Verdana;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+address,cite,dfn,em,i,var{font-style:normal;}
+small{font-size:12px;}
+ul,ol,li{list-style:none;}
+a{text-decoration:none; }a:link,a:visited,a:hover,a:active{text-decoration:none; outline:none;}
+abbr[title],acronym[title]{border-bottom:1px dotted;cursor:help;}
+q:before,q:after{content:'';}:focus{outline:0;}legend{color:#000;}
+fieldset,img{border:none; background:none;}button,input,select,textarea{font-size:100%;}
+input{border:1px solid #c9c9c9;padding-right:10px;padding-left: 10px; color: #898989;line-height: 24px; height: 24px;}
+input[type="radio"],input[type="checkbox"]{border:none; padding: 0;margin:0;cursor: pointer;}
+input[type="radio"]{position: relative;top:7px;*top:2px;[;top:2px;]}
+table{border-collapse:collapse;border-spacing:0;}
+hr{border:none;height:1px;*color:#fff;}img{-ms-interpolation-mode:bicubic;}
+a{cursor: pointer; color:#535353;}
+a:hover{color:#ff8a00;transition:all 0.35s ease-out 0s;-moz-transition:all 0.35s ease-out 0s;}
+.blue{color: #4a9eff !important;}
+.gray{color: #898989 !important;}
+.black{color: #434343 !important;}
+.zzt-red{color: #ff5256 !important;}
+.orange{color:#ff7741 !important;}
+.none{display: none;}
+.hide{display: none !important;}
+.fl-left{ float:left;}
+.fl-right{ float:right;}
+.clear:after,.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clear,.clearfix{zoom:1;}
+.container{ margin:0 auto; width:1100px;}
+.hide{ display:none; }
+.an035{transition:all 0.35s ease-out 0s;-moz-transition:all 0.35s ease-out 0s;}
+.fulltext{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.margin-b-20{margin-bottom: 20px !important;}
+.margin-t-20{margin-top: 20px !important;}
+.margin-t-0{margin-top: 0 !important;}
+.font-size-16{font-size: 16px !important;}
+.font-size-18{font-size: 18px !important;}
+.font-size-20{font-size: 20px !important;}
+.font-size-22{font-size: 22px !important;}
+.font-size-24{font-size: 24px !important;}
+.font-size-26{font-size: 26px !important;}
+.width310{width: 310px; }
+.lineclamp{ padding: 7px 10px; display: block;}
+#tooltip{background:#DDD;color:#000000;text-align:left;margin-right:10px;position:absolute;z-index:9999;display:none;box-shadow:0 0 3px #666;border:1px solid #FFF;padding:3px 8px;font-size:15px; max-width: 350px; }
+.form-box .animated{-webkit-animation-duration: .6s; animation-duration: .6s; -webkit-animation-fill-mode: both; -ms-animation-fill-mode: both; -moz-animation-fill-mode: both; animation-fill-mode: both;}
+/*顶部导航条*/
+.top-nav{background: #f6f6f6; height: 44px; line-height: 44px; color: #898989; vertical-align: top; overflow: hidden;position: relative;}
+.top-nav .fl-right{position: relative;}
+.top-nav .toplink{ position: absolute;top: 8px;right:0;}
+.toplink .i-weixin,.toplink .i-qq{ width: 28px; height: 28px; cursor:pointer;}
+.toplink .i-weixin{background-position: 0 -158px;}
+.toplink .i-weixin:hover{background-position: -28px -158px}
+.toplink .i-qq{background-position: -56px -158px}
+.toplink .i-qq:hover{background-position: -84px -158px}
+.toplink li{float: right; margin-left: 10px;}
+.top-nav .hotline{/*margin-right: 106px;*/}
+.loadlogin{padding-right:10px;}
+.loadlogin a{ margin-left: 5px; }
+.loadlogin a#Tphone{margin-left: 0;}
+.loadlogin .a2{color: #ff5256;margin-left: 20px;}
+.headerTmp{height: 134px; position: relative;}
+.headerTmpSide{height: 92px;position: relative;}
+#header{min-width: 1100px;}
+/*.footer{height: 276px; background: #414142; color: #eee;overflow: hidden;}
+.footer a{color: #eee;font-size: 14px;}
+.footer ul{float: left; margin: 50px 94px;text-align: center;}
+.footer ul li{font-size: 18px; line-height: 25px;}
+.footer ul li.frist{line-height: 35px;}
+.footer ul.ul4 li{margin-bottom: 10px;}
+.footer ul.ul4{text-align: left;}
+.footer ul.ul4 .p2{font-size: 16px;margin-top: 5px;}*/
+#footer{height: 102px; position: relative;min-width: 1100px;}
+.footer{height: 22px;line-height: 22px; background: #414142; color: #eee;overflow: hidden; padding: 40px 0;}
+.footer .fl-left span,.footer .fl-left a{padding-left: 20px; color: #ccc;}
+.footer ul{margin-top: 5px;}
+.footer ul li{float: left; padding: 0 10px; border-right: 1px solid #999; height: 14px;line-height: 12px; *line-height: 16px; *height:16px;}
+.footer ul li.last{padding-right: 0;border: none;}
+.footer a{color: #eee;}
+
+
+
+
+
+
+
+
+

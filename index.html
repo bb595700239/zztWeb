@@ -1,0 +1,327 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+    <title>中政投--首页</title>
+	<meta name="keywords" content="中政投" />
+	<meta name="description" content="中政投介绍" />
+    <link type="text/css" rel="stylesheet" href="/css/base.css">
+    <link type="text/css" rel="stylesheet" href="/css/index.min.css">
+    <script type="text/javascript" src="/js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="/js/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="/js/jquery.cookie.min.js"></script>
+    <script type="text/javascript" src="/js/goalProgress.js"></script>
+    <script type="text/javascript" src="/js/excanvas.js"></script>
+    <script type="text/javascript" src="/js/jquery.easy-pie-chart.js"></script>
+    <script type="text/javascript" src="/js/path.js"></script>
+    <script type="text/javascript" src="/js/global.js"></script>
+    <script type="text/javascript" src="/js/top.js"></script>
+
+    <script type="text/javascript" src="/js/index.js"></script>
+    <link type="text/css" rel="stylesheet" href="/css/animate.css">
+    <link type="text/css" rel="stylesheet" href="/js/dialog/dialog.css">
+    <script type="text/javascript" src="/js/dialog/dialog.js"></script>
+    <!--[if lt IE 7]>
+        <script src="/js/browser-not-supported.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	
+	<!-- 头部开始 -->
+    <div id="header">
+
+    	
+		<div class="top-nav">
+    		<div class="container clearfix">
+                <div class="fl-left">
+                    <span id="islogin" class="loadlogin none">
+	                    <a href="/html/account/account.html" id="Tphone">180*******2</a>,
+	                    <a class="a1" onclick="path.loginOuts()">退出</a>
+                    </span> 
+                    <span id="nologin" class="loadlogin none">
+	                	你好，请<a class="a1" href="/html/login.html">登录</a>
+	                	<a class="a2" href="/html/regist.html">免费注册</a>
+		            </span>
+                </div> 
+                
+
+                <div class="fl-right">
+                    <span class="hotline">客服热线：0571-28315355</span>
+                    <!-- <ul class="toplink">
+                        <li class="i-icon i-weixin"></li>
+                        <li class="i-icon i-qq"></li>
+                    </ul> -->
+                </div>		
+    		</div>
+    	</div>
+
+        <div class="main-nav">
+            <div class="container clearfix">
+                <a class="fl-left logo" href="/"><img src="/images/icon_logo.png" width="140" height="50" alt="中政投"></a> 
+                <div class="fl-left sub-tit">中国地方政府债投融资服务平台</div>
+                <ul class="index-nav fl-right">
+                    <li id="index" data-active="index"><a href="/">首页</a></li>
+                    <li id="manageMoney" data-active="manageMoney"><a href="/html/list/manageMoney.html">我要理财</a></li>
+                    <li  data-active="myspecial"><a href="/html/mySpecial/mySpecial.html" onclick="path.gotomyspecial();return false;">我的专享</a></li>
+                    <li  data-active="safety"><a href="/html/safety/safety.html">安全保障</a></li>
+                    <li  data-active="about"><a href="/html/about/about.html">关于我们</a></li>
+                    <li class="last"  data-active="account"><a href="/html/account/account.html" onclick="path.gotoaccount();return false;">我的账户</a></li>
+                </ul>    
+            </div>
+        </div>
+
+
+
+    
+        <div class="banner margin-b-20">
+            <div class="hd">
+                <ul><li class="i-icon"></li><li class="i-icon"></li><li class="i-icon"></li></ul>
+            </div>
+            <div class="bd">
+                <ul>
+                    <li><a href="/html/list/manageMoney.html?search=甲子瓮安" style="background: url(images/banner_01.jpg) center center no-repeat;"></a></li>
+                    <li><a href="/html/list/manageMoney.html?search=甲子瓮安" style="background: url(images/banner_02.jpg) center center no-repeat;"></a></li>
+                    <li><a href="/html/list/manageMoney.html?search=甲子瓮安" style="background: url(images/banner_03.jpg) center center no-repeat;"></a></li>
+                </ul>
+            </div> 
+            <div class="login-box none">
+                <p class="p1">中政投历史平均年化收益</p>
+                <p class="p2">8.8%</p>
+                <a class="btns btns-max" href="html/regist.html">免费注册</a>
+                <p class="p3"><span>已有帐号？</span><a href="html/login.html">立即登录</a></p>
+            </div>
+        </div>
+        <script>
+            $(".banner").slide({mainCell:".bd ul",autoPlay:true,effect:"fold"});
+        </script>
+    
+    </div>
+    <!-- 头部结束 -->
+
+    <div class="container">
+
+        <!-- 滚动新闻 -->
+        <div class="item-box new-box clearfix">
+            <div class="fl-left">
+                <i class="i-icon fl-left i-laba"></i>
+
+                <div class="scroll-top">
+                    <div class="bd">
+                        <ul class="infoList">
+                            <li><a href="/html/notice/detail1-02.html">“甲子基金瓮安1号”在“中政投”上线交易公告</a></li>
+                            <li><a href="/html/notice/detail1-04.html">“中政投”重磅来袭！全民首选理财网站试运行中</a></li>
+                            <li><a href="/html/notice/detail1-03.html">“甲子基金瓮安1号”产品介绍</a></li>
+                            <li><a href="/html/notice/detail1-01.html">宝付与“中政投”达成战略合作服务协议</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <script>
+            $(".scroll-top").slide({mainCell:".bd ul",autoPage:true,effect:"topLoop",autoPlay:true,vis:1});
+            </script>
+            <a class="more fl-right" href="/html/notice.html">更多<span class="arrows">>></span></a>
+        </div> 
+        <!-- 滚动新闻结束 -->
+
+        <!-- 项目特点 -->
+        <div class="item-box item-box-safe clearfix">
+            <ul class="list-safe fl-left">
+                <li><i class="i-icon i-safe"></i><p>政府项目安全性高</p></li>
+                <li><i class="i-icon i-lock"></i><p>双重风控和尽调</p></li>
+                <li><i class="i-icon i-right"></i><p>权威媒体监督</p></li>
+                <li><i class="i-icon i-gold"></i><p>高收益低门槛</p></li>
+            </ul>
+            <div class="total1 fl-left"><p class="p1">累计投资金额(元)</p><p class="p2 fulltext" id="allAnnualizedMoney">-</p></div>
+            <div class="total2 fl-right"><p class="p1">为用户赚取收益(元)</p><p class="p2 fulltext" id="allProfitMoney">-</p></div>
+        </div>
+        <!-- 项目特点结束 -->
+        
+        <!-- 热销产品 -->
+
+        <ul class="list-hotpro margin-b-20 clearfix">
+            <li class="li " >
+                <i class="i-icon i-tag"></i>
+                <p class="p1"><a href="/html/detail/175detail.html">201675</a></p>
+                <p class="p2">预期年化收益</p>
+				<p class="p3">1%</p>
+				<input type="hidden" name="subjectId" value="175" />
+                <div class="progress-bar progress-bar1" id="d175" data-percent='10,000'></div>
+                <ul class="sub-ul clearfix">
+                    <li class="subli"><p class="sub-p1">融资期限</p><p class="sub-p2 fulltext">6个月</p></li>
+                    <li class="subli"><p class="sub-p1">募集总额</p><p class="sub-p2 fulltext">1万</p></li>
+                    <li class="subli"><p class="sub-p1">起投金额</p><p class="sub-p2 fulltext">1</p></li>
+                </ul>
+                <a href="/html/detail/175detail.html" id="a175" class="btns btns-info">立即投资</a>
+            </li>
+            <li class="li " >
+                <i class="i-icon i-tag"></i>
+                <p class="p1"><a href="/html/detail/173detail.html">52000</a></p>
+                <p class="p2">预期年化收益</p>
+				<p class="p3">1%</p>
+				<input type="hidden" name="subjectId" value="173" />
+                <div class="progress-bar progress-bar1" id="d173" data-percent='0'></div>
+                <ul class="sub-ul clearfix">
+                    <li class="subli"><p class="sub-p1">融资期限</p><p class="sub-p2 fulltext">6个月</p></li>
+                    <li class="subli"><p class="sub-p1">募集总额</p><p class="sub-p2 fulltext">333</p></li>
+                    <li class="subli"><p class="sub-p1">起投金额</p><p class="sub-p2 fulltext">2</p></li>
+                </ul>
+                <a href="/html/detail/173detail.html" id="a173" class="btns btns-info">立即投资</a>
+            </li>
+            <li class="li last" >
+                <i class="i-icon i-tag"></i>
+                <p class="p1"><a href="/html/detail/136detail.html">33333测试</a></p>
+                <p class="p2">预期年化收益</p>
+				<p class="p3">12%</p>
+				<input type="hidden" name="subjectId" value="136" />
+                <div class="progress-bar progress-bar1" id="d136" data-percent='10,000'></div>
+                <ul class="sub-ul clearfix">
+                    <li class="subli"><p class="sub-p1">融资期限</p><p class="sub-p2 fulltext">6个月</p></li>
+                    <li class="subli"><p class="sub-p1">募集总额</p><p class="sub-p2 fulltext">10万</p></li>
+                    <li class="subli"><p class="sub-p1">起投金额</p><p class="sub-p2 fulltext">1万</p></li>
+                </ul>
+                <a href="/html/detail/136detail.html" id="a136" class="btns btns-info">立即投资</a>
+            </li>
+        </ul>
+        <!-- 热销产品结束 -->
+
+        <!-- 定期理财 -->
+        <div class="item-box item-box-con item-box-con-index">
+            <div class="tit clearfix"><h4 class="fl-left">定期理财</h4><a href="html/list/manageMoney.html" class="more fl-right">更多<span class="arrows">>></span></a></div>
+            <ul>
+				<li >
+                    <div class="con clearfix">
+                        <div class="fl-left">
+                            <p class="p1"><a href="/html/detail/133detail.html">11111测试</a></p>
+                            <p class="p2">项目担保描述333</p>
+                        </div>
+                        <p class="fl-right p3">按日计息,每1个月为周期还息,到期还本</p>
+                    </div>
+                    <div class="info clearfix">
+                        <ul class="sub-ul fl-left">
+                        	<li class="frist"><p class="p1"><span class="big">1%</span></p><p class="p2">年化利率</p></li>	  
+                        	<input type="hidden" name="subjectId" value="133" />
+                            <li><p class="p1"><span class="big">6</span>个月</p><p class="p2">融资期限</p></li>
+                            <li><p class="p1"><span class="big">1000</span>元</p><p class="p2">认购起点</p></li> 
+                            <li><p class="p1"><span class="big">1.1万</span>元</p><p class="p2">融资总额</p></li> 
+                            <li><p class="p1"><span class="big" id="l133">1.1万</span>元</p><p class="p2">剩余金额</p></li> 
+                        </ul>
+                        <div class="percentage fl-left" data-percent="10,000" id='d133'><span id='r133'>10,000</span></div>
+
+                        <a href="/html/detail/133detail.html" id='a133'  class="btns btns-info fl-right">立即投资</a>
+                    </div>                        
+                </li>
+				<li >
+                    <div class="con clearfix">
+                        <div class="fl-left">
+                            <p class="p1"><a href="/html/detail/124detail.html">测试新的关联表</a></p>
+                            <p class="p2">项目担保描述333</p>
+                        </div>
+                        <p class="fl-right p3">按日计息,每1个月为周期还息,到期还本</p>
+                    </div>
+                    <div class="info clearfix">
+                        <ul class="sub-ul fl-left">
+                        	<li class="frist"><p class="p1"><span class="big">1%</span></p><p class="p2">年化利率</p></li>	  
+                        	<input type="hidden" name="subjectId" value="124" />
+                            <li><p class="p1"><span class="big">6</span>个月</p><p class="p2">融资期限</p></li>
+                            <li><p class="p1"><span class="big">1万</span>元</p><p class="p2">认购起点</p></li> 
+                            <li><p class="p1"><span class="big">20万</span>元</p><p class="p2">融资总额</p></li> 
+                            <li><p class="p1"><span class="big" id="l124">19万</span>元</p><p class="p2">剩余金额</p></li> 
+                        </ul>
+                        <div class="percentage fl-left" data-percent="5" id='d124'><span id='r124'>5</span></div>
+
+                        <a href="/html/detail/124detail.html" id='a124'  class="btns btns-info fl-right">立即投资</a>
+                    </div>                        
+                </li>
+				<li class="last">
+                    <div class="con clearfix">
+                        <div class="fl-left">
+                            <p class="p1"><a href="/html/detail/212detail.html">1</a></p>
+                            <p class="p2">项目担保描述333</p>
+                        </div>
+                        <p class="fl-right p3">按自然季度付息,到期还本</p>
+                    </div>
+                    <div class="info clearfix">
+                        <ul class="sub-ul fl-left">
+                        	<li class="frist"><p class="p1"><span class="big">1%</span></p><p class="p2">年化利率</p></li>	  
+                        	<input type="hidden" name="subjectId" value="212" />
+                            <li><p class="p1"><span class="big">6</span>个月</p><p class="p2">融资期限</p></li>
+                            <li><p class="p1"><span class="big">1</span>元</p><p class="p2">认购起点</p></li> 
+                            <li><p class="p1"><span class="big">1</span>元</p><p class="p2">融资总额</p></li> 
+                            <li><p class="p1"><span class="big" id="l212">1</span>元</p><p class="p2">剩余金额</p></li> 
+                        </ul>
+                        <div class="percentage fl-left" data-percent="0" id='d212'><span id='r212'>0</span></div>
+
+                        <a href="/html/detail/212detail.html" id='a212'  class="btns btns-info fl-right">立即投资</a>
+                    </div>                        
+                </li>
+
+            </ul>
+            <script type="text/javascript">
+
+            </script>
+        </div>    
+        <!-- 定期理财结束 -->
+
+        <div class="clearfix">
+            <!-- 网站公告 -->
+            <div class="item-box item-box-mes fl-left">
+                <div class="tit clearfix"><h4 class="fl-left">网站公告</h4> <a href="/html/notice.html#notice" class="more fl-right">更多<span class="arrows">>></span></a></div>
+                <ul>
+                    <li class="clearfix"><span class="point">.</span><a href="/html/notice/detail1-02.html">“甲子基金瓮安1号”在“中政投”上线交易公告</a><span class="time">2016-08-08</span></li>
+                    <li class="clearfix"><span class="point">.</span><a href="/html/notice/detail1-04.html">“中政投”重磅来袭！全民首选理财网站试运行中</a><span class="time">2016-08-08</span></li>
+                    <li class="clearfix"><span class="point">.</span><a href="/html/notice/detail1-03.html">“甲子基金瓮安1号”产品介绍</a><span class="time">2016-08-01</span></li>
+                    <li class="clearfix"><span class="point">.</span><a href="/html/notice/detail1-01.html">宝付与“中政投”达成战略合作服务协议</a><span class="time">2016-07-31</span></li>
+                </ul>
+            </div>
+            <!-- 网站公告结束 -->
+
+            <!-- 行业动态 -->
+            <div class="item-box item-box-mes fl-right">
+                <div class="tit clearfix"><h4 class="fl-left">行业动态</h4> <a href="/html/notice.html#trends" class="more fl-right">更多<span class="arrows">>></span></a></div>
+                <ul>
+                    <li class="clearfix"><span class="point">.</span><a href="/html/notice/detail04.html">陈鹏飞：私募“新贵”的逆袭之路</a><span class="time">2016-08-08</span></li>
+                    <li class="clearfix"><span class="point">.</span><a href="/html/notice/detail03.html">新生态•新机遇 2016浙江金融创新高峰论坛在杭州隆重举行</a><span class="time">2016-08-06</span></li>
+                    <li class="clearfix"><span class="point">.</span><a href="/html/notice/detail02.html">供应链金融大热，P2G的春天还会远吗？</a><span class="time">2016-08-05</span></li>
+                    <li class="clearfix"><span class="point">.</span><a href="/html/notice/detail01.html">2016（第三届）互联网金融风控峰会今日召开</a><span class="time">2016-08-02</span></li> 
+                </ul>
+            </div>
+            <!-- 行业动态结束 -->
+        </div>
+        
+        <!-- 友链 -->
+        <div class="item-box item-box-flinks">
+            <div class="tit">合作伙伴</div>
+            <ul class="clearfix">
+				<li><a target="_blank" href="https://www.baofoo.com/"><img src="/images/linkslogo.jpg" alt="宝付"></a></li>
+                <li><a target="_blank" href="https://www.tongdun.cn/"><img src="/images/linkslogo2.jpg" alt="同盾科技"></a></li>
+                <li><a target="_blank" href="http://www.zjol.com.cn/"><img src="/images/linkslogo3.jpg" alt="浙江在线"></a></li>
+                <li><a target="_blank" href="https://www.aliyun.com/"><img src="/images/linkslogo4.jpg" alt="阿里云"></a></li>
+                <li><a target="_blank" href="http://www.laecap.com/"><img src="/images/linkslogo5.jpg" alt="亚租所"></a></li>
+            </ul>
+        </div>
+        <!-- 友链结束 -->
+
+    </div>
+
+<div id="footer">
+    <div class="footer">
+        <div class="container clearfix">
+            <div class="fl-left">
+                浙江甲秀网络科技有限公司&nbsp;&nbsp;版权所有&nbsp;<a href="http://www.miitbeian.gov.cn/" target="_blank">浙ICP备16026152号-1</a>
+                <span>客服热线：0571-28315355</span>
+            </div>
+            <ul class="fl-right">
+                <li><a href="/html/about/about.html">平台介绍</a></li>
+                <li><a href="/html/about/about.html#friends">合作伙伴</a></li>
+                <li><a href="/html/safety/safety.html">安全保障</a></li>
+                <li class="last"><a href="/html/about/about.html#contact">联系我们</a></li>
+            </ul>
+        </div>
+    </div>
+</div>	 
+</body>
+</html>

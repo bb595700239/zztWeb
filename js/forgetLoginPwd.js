@@ -1,0 +1,1 @@
+function checkphone(e){var n=e.val(),r=2;$.ajax({type:"POST",url:url+"user/checkPhone",data:{phone:n,flag:r},success:function(n){"fail"==n.message?rule.erroralert(e,"该手机没有被注册"):rule.success(e)}})}$(function(){$.getQueryString("phone")?$("#phone").val($.getQueryString("phone")).blur():null});

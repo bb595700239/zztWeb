@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>中政投--充值</title>
+	<meta name="keywords" content="中政投" />
+	<meta name="description" content="中政投介绍" />
+    <link type="text/css" rel="stylesheet" href="../css/base.css">
+    <link type="text/css" rel="stylesheet" href="../css/index.min.css">
+    <script type="text/javascript" src="../js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="../js/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="../js/goalProgress.js"></script>
+    <script type="text/javascript" src="../js/excanvas.js"></script>
+    <script type="text/javascript" src="../js/jquery.easy-pie-chart.js"></script>
+    <script type="text/javascript" src="../js/form-validation.js"></script>
+    <script type="text/javascript" src="../js/global.js"></script>
+
+    <script type="text/javascript" src="../js/jquery.cookie.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="../js/popover/jquery.webui-popover.min.css">
+    <script type="text/javascript" src="../js/popover/jquery.webui-popover.min.js"></script>
+    <!--[if lt IE 8]>
+        <script src="../js/browser-not-supported.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	
+	<!-- 头部开始 -->
+    <header data-temp="header-side-template.html" data-title="充值"></header>
+    <!-- 头部结束 -->
+    <div class="container">
+        <div class="item-box border-top margin-t-20">
+            <div class="friendship">
+                <div class="con">
+                    <i class="icon-form form-danger"></i>充值成功后,一般5分钟内到账，最迟24小时内到账。
+                </div>
+            </div>
+            <div class="form-box">
+                <div class="form-alert">系统繁忙，请稍后重试！</div>
+                <form class="g-form">
+                    <div class="form-group clearfix">
+                        <label class="g-label">充值金额：</label>
+                        <div class="input-w amount">
+                            <input class="g-input" type="text" value="50000" id="amountinput" onfocus="rule.tip($(this),'请输入充值金额')" onblur="rule.empty($(this),'充值金额不能为空')" data-group-state="false">
+                            <span class="unit">元</span>
+                        </div>
+                        <script>
+                            function getStatesFn(argument) {
+                                 alert(1)  
+                            }
+                            $(function() {
+                                $('#amountinput').on('keyup blur',function() {
+                                    var val=$(this).val();
+                                    $('#upper').text(rule.digitUppercase(val)); 
+                                })
+
+                               
+                            })
+                        </script>
+                    </div> 
+                    <div class="form-group clearfix">
+                        <label class="g-label">金额大写：</label>
+                        <div class="input-w">
+                            <span class="font-size-20" id="upper">伍万元整</span>
+                        </div>
+                    </div> 
+                    <div class="form-group clearfix">
+                        <label class="g-label">交易方式：</label>
+                        <div class="input-w radioselect">
+                            <input type="radio" name="paytype" id="radio1" checked="checked"><label for="radio1">快捷支付</label>
+                            <input type="radio" name="paytype" id="radio2"><label for="radio2">快捷支付</label>
+                            <span class="forradio">？</span>
+                        </div>
+                    </div> 
+                    <div class="form-group clearfix">
+                        <label class="g-label"></label>
+                        <div class="input-w surebtn">
+                            <a class="btns btns-info">确认</a>
+                        </div>
+                    </div>
+                </form>
+                <script>
+                    $('.forradio').webuiPopover({
+                        trigger:'hover',
+                        content:function(){
+                            return $('#myContent').html();
+                        }
+                    });
+                </script>
+
+
+                <div class="hide" id="myContent">
+                    <table class="g-table table-s">
+                        <thead><tr><th>银行名称</th><th>最大金额</th></tr></thead>
+                        <tbody><tr><td>华夏银行</td><td>500w</td></tr><tr><td>华夏银行</td><td>500w</td></tr><tr><td>华夏银行</td><td>500w</td></tr></tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer data-temp="footer-template.html"></footer>
+   
+
+</body>
+</html>

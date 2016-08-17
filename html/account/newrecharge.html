@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+    <title>中政投--充值</title>
+    <meta name="keywords" content="中政投" />
+    <meta name="description" content="中政投介绍" />
+    <link type="text/css" rel="stylesheet" href="/css/base.css">
+    <link type="text/css" rel="stylesheet" href="/css/index.min.css">
+    <link type="text/css" rel="stylesheet" href="/css/animate.css">
+    <script type="text/javascript" src="/js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="/js/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="/js/jquery.cookie.min.js"></script>
+    <script type="text/javascript" src="/js/path.js"></script>
+    <script type="text/javascript" src="/js/global.js"></script>
+    <script type="text/javascript" src="/js/top.js"></script>
+    
+    <script type="text/javascript" src="/js/form-validation.js"></script>
+    <link type="text/css" rel="stylesheet" href="/js/dialog/dialog.css">
+    <script type="text/javascript" src="/js/dialog/dialog.js"></script>
+    <link type="text/css" rel="stylesheet" href="/js/popover/jquery.webui-popover.min.css">
+    <script type="text/javascript" src="/js/popover/jquery.webui-popover.min.js"></script>
+    <script type="text/javascript">
+        var jump_link="/html/login.html"
+    </script>
+    <!--[if lt IE 7]>
+        <script src="/js/browser-not-supported.js"></script>
+    <![endif]-->
+</head>
+<body>
+    
+    <!-- 头部开始 -->
+    <div id="header" class="headerTmp" data-temp="/html/header-template.html" data-title="充值"></div>
+    <!-- 头部结束 -->
+    <div class="container">
+        <div class="item-box border-top margin-t-20">
+            <div class="friendship">
+                <div class="con">
+                    <i class="icon-form form-danger"></i>充值成功后,一般5分钟内到账，最迟24小时内到账。
+                </div>
+            </div>
+            <div class="form-box">
+                <div class="form-alert" style="display: none;">系统繁忙，请稍后重试！</div>
+                <form class="g-form" id="myform" method="post" onsubmit="return false">
+                    <div class="form-group clearfix">
+                        <label class="g-label">充值金额：</label>
+                        <div class="input-w amount">
+                            <input class="g-input" type="text" id="rechargeMoney" name="rechargeMoney" onfocus="rule.tip($(this),'请输入充值金额')" onblur="rule.integer($(this),'充值金额有误')" onkeyup="value=value.replace(/[^\d.]/g, '').replace(/^\./g, '').replace('.', '$#$').replace(/\./g, '').replace('$#$', '.').replace(/([0-9]+\.[0-9]{2})[0-9]*/, '$1');rule.integer($(this),'充值金额有误')"  maxlength="12" size="12" data-group-state="false">
+                            <input type="hidden" name="domin" id="domin">
+                            <input type="hidden" name="userId" id="userId">
+                            <span class="unit">元</span>
+                        </div>
+                    </div> 
+                    <div class="form-group clearfix">
+                        <label class="g-label">大写金额：</label>
+                        <div class="input-w">
+                            <span class="font-size-20" id="upper">-</span>
+                        </div>
+                    </div> 
+                    <div class="form-group clearfix">
+                        <label class="g-label">交易方式：</label>
+                        <div class="input-w radioselect">
+                            <input type="radio" name="paytype" id="radio1" value="1" checked="checked"><label for="radio1">网银支付</label>
+                            <input type="radio" name="paytype" id="radio2" value="2" ><label for="radio2">快捷支付</label>
+                            <span id="radio2pop">&nbsp;</span>
+                        </div>
+                    </div> 
+                    <div class="form-group clearfix">
+                        <label class="g-label"></label>
+                        <div class="input-w surebtn">
+                            <a class="btns btns-info">确认</a>
+                        </div>
+                    </div>
+                </form>
+                <div class="hide" id="formDiv">
+                    
+                </div>
+               <!--  <a class="btns btns-info" id="submitform">提交表单</a> -->
+            </div>
+        </div>
+    </div>
+
+    <div id="footer" data-temp="/html/footer-template.html"></div>
+    <script type="text/javascript" src="/js/newrecharge.js"></script>
+</body>
+</html>
